@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CadDemanda</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<style>
+		.body{
+			background-color: #00e88f
+		}
+
+	</style>
+</head>
+<body>
+	<section>
+		<nav class="navbar navbar-dark bg-dark">
+		  	<a class="navbar-brand mr-auto" href="../home.html">
+				<img src="logoDescohorizontal.png" style="padding-left: 10%;" width="300" height="45" >
+		  	</a>
+		</nav>
+	</section>
+	  
+	<section class="body">
+		<div class="row col-md-12">
+			<div class="col-md-4"></div>
+			<div class="col-md-4 cadastro">
+				<form>
+					<br>
+					<h3>Etapa 2 - Cadastro de Demanda</h3>
+					<br>
+					<div class="form-group">
+					  	<label for="inputCliente">Cliente:</label>
+					  	<input type="text" class="form-control" id="inputCliente" placeholder="Digite o Nome do Cliente">
+					</div>
+					<br>
+					<div class="form-group">
+					  	<label for="inputTitulo">Título do Projeto:</label>
+					  	<input type="text" class="form-control" id="inputTitulo" placeholder="Digite o Título do Projeto" required>
+					</div>
+					<br>
+					<div class="form-group">
+					  	<label for="inputDescricao">Descrição Breve do Projeto:</label>
+					  	<textarea class="form-control" id="inputDescricao" placeholder="Descreva brevemente o projeto"></textarea>
+					</div>
+					<br>
+					<div class="form-group">
+					  	<label for="inputMentor">Nome do Mentor:</label>
+					  	<input type="text" class="form-control" id="inputMentor" placeholder="jesus de jesus ">
+					</div>
+					<br>
+					<div class="form-group">
+					  	<label for="inputEmailMentor">Email do Mentor:</label>
+					  	<input type="email" class="form-control" id="inputEmailMentor" placeholder="xxxxxxxxx@gmail.comr">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="inputNumeroCelular">Número de Celular:</label>
+						<input type="tel" class="form-control" id="inputNumeroCelular" placeholder="(XX) XXXXX-XXXX">
+						<small class="form-text text-muted">Informe o número de celular no formato (XX) XXXXX-XXXX.</small>
+					</div>	
+					<br>				  
+					<div class="form-group">
+					  	<label for="inputExplicacao">Explicação detalhada sobre a Demanda:</label>
+					  	<textarea class="form-control" id="inputExplicacao" placeholder="Explicacao detalhada"></textarea>
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="inputAnexo">Anexar Arquivo:</label>
+						<input type="file" class="form-control-file" id="inputAnexo">
+						<small class="form-text text-muted">Selecione um arquivo para anexar (PDF, imagem, etc.).</small>
+					</div>				
+					<br>	  
+					<div class="d-grid gap-2 col-6 mx-auto">
+						<a class="btn btn-primary" href="Cadtrue.html"role="button">Enviar e Finalizar</a>
+						<a class="btn btn-primary" href="CadFalse.html"role="button">Enviar e Finalizar</a>
+					</div>
+					<br><br><br>
+				  </form>											  
+			</div>
+		</div>
+	</section>
+
+<!-- chamada do JS -->
+<script type="text/javascript" src="views/js/bootrstrap.js"></script>
+</body>
+</html>
