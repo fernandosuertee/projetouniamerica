@@ -1,0 +1,90 @@
+body, html {
+    height: 115%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+
+.container {
+    position: relative;
+    width: 1200px;  /* Definindo a largura do contêiner para 1200 pixels */
+    padding: 100px;  /* Adicionando mais espaço interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.home-btn {
+    position: absolute;
+    top: 30px;
+    left: -110px;  /* Movendo mais para a esquerda */
+    padding: 12px 24px;  /* Tornando o botão um pouco maior */
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.home-btn:hover {
+    background-color: #24af24;
+}
+
+.demands {
+    margin-top: 30px;  /* Aumentando o espaço do topo */
+}
+
+.demand {
+    margin-bottom: 30px;  /* Aumentando o espaço entre as demandas */
+    padding: 20px;  /* Adicionando espaço interno nas demandas */
+    border: 1px solid #ddd;  /* Adicionando borda às demandas */
+    border-radius: 8px;  /* Arredondando os cantos das demandas */
+}
+
+.demand:last-child {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;  /* Aumentando o espaço abaixo do título */
+    font-size: 1.5em;  /* Aumentando o tamanho da fonte do título */
+}
+
+.imagem-estilizada {
+    width: 300px;       /* Define a largura da imagem */
+    border-radius: 0px; /* Arredonda os cantos */
+    box-shadow: 3px 3px 10px #fff(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
+    border: 2px solid #eeeeee; /* Adiciona uma borda sólida */
+    margin: 20px auto;  /* Centraliza a imagem (quando display é block) e adiciona uma margem vertical */
+    display: flexbox;    /* Faz a imagem se comportar como um bloco */
+    text-align: center;
+      position: absolute;
+      top: -20px;
+      left: 38%;
+     
+  }
+
+  .demand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-btn {
+    background-color: #24af24;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details-btn:hover {
+    background-color: #012c49;
+}
