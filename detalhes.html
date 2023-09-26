@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Centraliza verticalmente na tela */
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: rgb(14, 214, 14);
+            color: white;
+        }
+
+        .retangulo {
+            width: 80%;
+            max-width: 800px; /* Ajuste a largura conforme necessário */
+            height: 200px; /* Altura do retângulo */
+            background-color: lightgray; /* Cor de fundo */
+            border: 2px solid #ddd; /* Bordas */
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .header-text {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .descricao-text {
+            padding: 20px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .anexos-table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .anexos-th, .anexos-td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .anexos-th {
+            background-color: #333;
+            color: white;
+        }
+        .voltar-button {
+            position: absolute;
+            top: 10px; /* Distância do topo */
+            left: 10px; /* Posicionado à esquerda da tela */
+            background-color: #000000;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .voltar-button:hover {
+            background-color: rgb(17, 242, 17);
+        }
+        .quero-button {
+            position: absolute;
+            top: 10px; /* Distância do topo */
+            left: 1200px; /* Posicionado à direita da tela */
+            background-color: #000000;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .quero-button:hover {
+            background-color: rgb(17, 242, 17);
+        }
+    </style>
+</head>
+<body>
+    <a href="demandas-aluno.html" class="voltar-button">Voltar</a>
+    <a href="confirmacao.html" class="quero-button">Quero Essa Demanda</a>
+    <table>
+        <thead>
+            <tr>
+                <td>Detalhes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TÍTULO DO PROJETO: Título do Projeto</td>
+                <td>SOLICITADO EM: data</td>
+            </tr>
+            <tr>
+                <td>RAZÃO SOCIAL: Razão Social</td>
+                <td>EMAIL: Email</td>
+            </tr>
+            <tr>
+                <td>CONTATO DO MENTOR : Contato</td>
+                <td>NOME FANTASIA DA EMPRESA: Nome fantasia</td>
+            </tr>
+            <tr>
+                <td>DESCRIÇÃO DO PROJETO:</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="retangulo">
+        <div class="header-text">Descrição da demanda</div>
+        <div class="descricao-text">
+            _______________________________________________________________________________________________<br>
+            _______________________________________________________________________________________________<br>
+            _______________________________________________________________________________________________<br>
+            _______________________________________________________________________________________________<br>
+            _______________________________________________________________________________________________<br>
+            _______________________________________________________________________________________________<br>
+            _______________________________________________________________________________________________<br>
+        </div>
+    </div>
+
+    <table class="anexos-table">
+        <thead>
+            <tr>
+                <th>Nome do Anexo</th>
+                <th>Tamanho</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Anexo1.pdf</td>
+                <td>250 KB</td>
+                <td><a href="#">Baixar</a></td>
+            </tr>
+            <tr>
+                <td>Anexo2.jpg</td>
+                <td>500 KB</td>
+                <td><a href="#">Baixar</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

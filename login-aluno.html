@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Aluno</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #numero {
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /* Remova as setas laterais do campo de entrada numérica */
+        #numero::-webkit-outer-spin-button,
+        #numero::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+        /* Aumente a largura do campo da senha */
+        #senha {
+            padding: 10px;
+            font-size: 18px;
+            width: 16%;
+        }
+        
+        .retangulo {
+            width: 100px;
+            height: 25px;
+            background-color: rgb(220, 218, 218); /* Cor interna dos retângulos */
+            margin: 20px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            border: 2px solid rgb(168, 167, 167); /* Cor da borda */
+        }
+
+        .retangulo p {
+            line-height: 0px; /* centralizar verticalmente o texto */
+        }
+
+        .retangulo:hover {
+            background-color: rgb(17, 242, 17); /* Cor interna dos retângulos quando hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <input type="number" id="numero" min="0" placeholder="Digite seu RA">
+    <input type="password" id="senha" placeholder="Digite sua senha">
+    <a href="dashboard-aluno.html" class="retangulo">
+        <p>Entrar</p>
+    </a>
+</body>
+</html>
