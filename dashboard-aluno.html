@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .retangulo {
+            width: 200px;
+            height: 25px;
+            background-color: rgb(220, 218, 218); /* Cor interna dos retângulos */
+            margin: 20px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            border: 2px solid rgb(168, 167, 167); /* Cor da borda */
+        }
+
+        .retangulo p {
+            line-height: 0px; /* centralizar verticalmente o texto */
+        }
+
+        .retangulo:hover {
+            background-color: rgb(17, 242, 17); /* Cor interna dos retângulos quando hover */
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Imagem de Cabeçalho" style="max-width: 20%; height: auto;">
+    <a href="demandas-aluno.html" class="retangulo">
+        <p>Demandas</p>
+    </a>
+    <a href="grupo.html" class="retangulo">
+        <p>Meu Grupo</p>
+    </a>
+    <a href="adicionar.html" class="retangulo">
+        <p>Criar Grupo</p>
+    </a>
+</body>
+</html>

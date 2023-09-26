@@ -1,0 +1,60 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cccccc;
+}
+
+.container {
+    max-width: 800px;
+    margin: 150px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.empresa {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.empresa:last-child {
+    border-bottom: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.home-btn {
+    position: absolute;
+    top: 130px;
+    left: 100px;  /* Movendo mais para a esquerda */
+    padding: 12px 24px;  /* Tornando o botão um pouco maior */
+    border: none;
+    border-radius: 5px;
+    background-color: #24af24;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.home-btn:hover {
+    background-color: #012c49;
+}
+
+.imagem-estilizada {
+    width: 300px;       /* Define a largura da imagem */
+    border-radius: 0px; /* Arredonda os cantos */
+    box-shadow: 3px 3px 10px #fff(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
+    
+    margin: 20px auto;  /* Centraliza a imagem (quando display é block) e adiciona uma margem vertical */
+    display: flexbox;    /* Faz a imagem se comportar como um bloco */
+    text-align: center;
+      position: absolute;
+      top: -20px;
+      left: 38%;
+     
+  }
