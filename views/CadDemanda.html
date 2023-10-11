@@ -7,6 +7,41 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 
+	<!-- verifica numero celular e valido -->
+	<script>
+        function validarNumeroCelular(input) {
+        const numeroCelular = input.value.replace(/[^\d]/g, ''); // Remove caracteres não numéricos
+    	}
+
+    // Função para formatar o número de celular
+    function autoFormatarCNPJ(input) {
+        const unformatted = input.value.replace(/[^\d]/g, ''); // Remove caracteres não numéricos
+
+        if (unformatted.length >= 2) {
+            input.value = `(${unformatted.slice(0, 2)}`;
+        }
+
+        if (unformatted.length > 2) {
+            input.value += `) ${unformatted.slice(2)}`;
+        }
+
+        if (unformatted.length > 7) {
+            input.value = `${input.value.slice(0, 10)}-${unformatted.slice(7)}`;
+        }
+    }
+
+		// Adiciona um evento de escuta (event listener) para validar o número de celular
+		const numeroCelularInput = document.getElementById("inputNumeroCelular");
+		numeroCelularInput.addEventListener("blur", function() {
+			validarNumeroCelular(this);
+		});
+
+		// Adiciona um evento de escuta (event listener) para formatar o número de celular enquanto o usuário digita
+		numeroCelularInput.addEventListener("input", function() {
+			autoFormatarCNPJ(this);
+		});
+	</script>
+
 	<style>
 		.body{
 			background-color: #00e88f
@@ -58,7 +93,7 @@
 					<br>
 					<div class="form-group">
 						<label for="inputNumeroCelular">Número de Celular:</label>
-						<input type="tel" class="form-control" id="inputNumeroCelular" placeholder="(XX) XXXXX-XXXX"required >
+						<input type="tel" class="form-control" id="inputNumeroCelular" maxlength="15" placeholder="(XX) XXXXX-XXXX" required onblur="validarNumeroCelular(this);" oninput="autoFormatarCNPJ(this);">
 						<small class="form-text text-muted">Informe o número de celular no formato (XX) XXXXX-XXXX.</small>
 					</div>	
 					<br>				  
