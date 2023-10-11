@@ -209,12 +209,12 @@
 					<div class="form-group col-md">
 						<br>
 						<label for="inputNomeFantasia">Nome Fantasia:</label>
-						<input type="text" class="form-control" id="inputNomeFantasia" placeholder="Digite o Nome Fantasia" required>
+						<input type="text" class="form-control" id="inputNomeFantasia" placeholder="Digite o Nome Fantasia" equired oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '');">>
 					</div>
 					<br>
 					<div class="form-group col-md">
 						<label for="inputRazaoSocial">Razão Social:</label>
-						<input type="text" class="form-control" id="inputRazaoSocial" placeholder="Digite a Razão Social" required>
+						<input type="text" class="form-control" id="inputRazaoSocial" placeholder="Digite a Razão Social" equired oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '');">>
 					</div>
 					<br>
 					<div class="form-group col-md-6">

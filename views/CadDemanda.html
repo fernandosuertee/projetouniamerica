@@ -68,7 +68,7 @@
 					<br>
 					<div class="form-group">
 					  	<label for="inputCliente">Cliente:</label>
-					  	<input type="text" class="form-control" id="inputCliente" placeholder="Digite o Nome do Cliente" required>
+					  	<input type="text" class="form-control" id="inputCliente" placeholder="Digite o Nome do Cliente" required oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '');">
 					</div>
 					<br>
 					<div class="form-group">
@@ -83,7 +83,7 @@
 					<br>
 					<div class="form-group">
 					  	<label for="inputMentor">Nome do Mentor:</label>
-					  	<input type="text" class="form-control" id="inputMentor" placeholder="jesus de jesus " required>
+					  	<input type="text" class="form-control" id="inputMentor" placeholder="jesus de jesus " required oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '');">
 					</div>
 					<br>
 					<div class="form-group">
@@ -93,7 +93,7 @@
 					<br>
 					<div class="form-group">
 						<label for="inputNumeroCelular">Número de Celular:</label>
-						<input type="tel" class="form-control" id="inputNumeroCelular" maxlength="15" placeholder="(XX) XXXXX-XXXX" required onblur="validarNumeroCelular(this);" oninput="autoFormatarCNPJ(this);">
+						<input type="tel" class="form-control" id="inputNumeroCelular" maxlength="15" placeholder="(XX) XXXXX-XXXX" required onblur="validarNumeroCelular(this);" oninput="autoFormatarCNPJ(this);" oninput="this.value = this.value.replace(/[^0-9]/g, '');" >
 						<small class="form-text text-muted">Informe o número de celular no formato (XX) XXXXX-XXXX.</small>
 					</div>	
 					<br>				  
