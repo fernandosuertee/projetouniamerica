@@ -18,7 +18,7 @@
 	<section>
 		<nav class="navbar navbar-dark bg-dark">
 		  	<a class="navbar-brand mr-auto" href="../home.html">
-				<img src="logoDescohorizontal.png" style="padding-left: 10%;" width="300" height="45" >
+				<img src="img/logoDescohorizontal.png" style="padding-left: 10%;" width="300" height="45" >
 		  	</a>
 		</nav>
 	</section>
@@ -27,13 +27,13 @@
 		<div class="row col-md-12">
 			<div class="col-md-4"></div>
 			<div class="col-md-4 cadastro">
-				<form>
+				<form action="Cadtrue.html">
 					<br>
 					<h3>Etapa 2 - Cadastro de Demanda</h3>
 					<br>
 					<div class="form-group">
 					  	<label for="inputCliente">Cliente:</label>
-					  	<input type="text" class="form-control" id="inputCliente" placeholder="Digite o Nome do Cliente">
+					  	<input type="text" class="form-control" id="inputCliente" placeholder="Digite o Nome do Cliente" required>
 					</div>
 					<br>
 					<div class="form-group">
@@ -43,28 +43,28 @@
 					<br>
 					<div class="form-group">
 					  	<label for="inputDescricao">Descrição Breve do Projeto:</label>
-					  	<textarea class="form-control" id="inputDescricao" placeholder="Descreva brevemente o projeto"></textarea>
+					  	<textarea class="form-control" id="inputDescricao" placeholder="Descreva brevemente o projeto" required></textarea>
 					</div>
 					<br>
 					<div class="form-group">
 					  	<label for="inputMentor">Nome do Mentor:</label>
-					  	<input type="text" class="form-control" id="inputMentor" placeholder="jesus de jesus ">
+					  	<input type="text" class="form-control" id="inputMentor" placeholder="jesus de jesus " required>
 					</div>
 					<br>
 					<div class="form-group">
 					  	<label for="inputEmailMentor">Email do Mentor:</label>
-					  	<input type="email" class="form-control" id="inputEmailMentor" placeholder="xxxxxxxxx@gmail.comr">
+					  	<input type="email" class="form-control" id="inputEmailMentor" placeholder="xxxxxxxxx@gmail.comr" required>
 					</div>
 					<br>
 					<div class="form-group">
 						<label for="inputNumeroCelular">Número de Celular:</label>
-						<input type="tel" class="form-control" id="inputNumeroCelular" placeholder="(XX) XXXXX-XXXX">
+						<input type="tel" class="form-control" id="inputNumeroCelular" placeholder="(XX) XXXXX-XXXX"required >
 						<small class="form-text text-muted">Informe o número de celular no formato (XX) XXXXX-XXXX.</small>
 					</div>	
 					<br>				  
 					<div class="form-group">
-					  	<label for="inputExplicacao">Explicação detalhada sobre a Demanda:</label>
-					  	<textarea class="form-control" id="inputExplicacao" placeholder="Explicacao detalhada"></textarea>
+					  	<label for="inputExplicacao" >Explicação detalhada sobre a Demanda:</label>
+					  	<textarea class="form-control" id="inputExplicacao" placeholder="Explicacao detalhada..." ></textarea>
 					</div>
 					<br>
 					<div class="form-group">
@@ -74,8 +74,7 @@
 					</div>				
 					<br>	  
 					<div class="d-grid gap-2 col-6 mx-auto">
-						<a class="btn btn-primary" href="Cadtrue.html"role="button">Enviar e Finalizar</a>
-						<a class="btn btn-primary" href="CadFalse.html"role="button">Enviar e Finalizar</a>
+						<button type="submit" class="btn btn-primary" >Enviar e Finalizar </button>
 					</div>
 					<br><br><br>
 				  </form>											  
