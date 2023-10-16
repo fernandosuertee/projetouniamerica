@@ -104,8 +104,12 @@
     </style>
 </head>
 <body>
-    <a href="demandas-aluno.html" class="voltar-button">Voltar</a>
-    <a href="confirmacao.html" class="quero-button">Quero Essa Demanda</a>
+    <form action="demandas-aluno.html">
+        <button type="submit" class="voltar-button">Voltar</button>
+    </form>
+    <form action="confirmacao.html">
+        <button type="submit" class="quero-button">Quero essa demanda</button>
+    </form>
     <table>
         <thead>
             <tr>
@@ -156,12 +160,20 @@
             <tr>
                 <td>Anexo1.pdf</td>
                 <td>250 KB</td>
-                <td><a href="#">Baixar</a></td>
+                <td>
+                    <form action="">
+                        <button type="submit" class="detalhes-button">Baixar</button>
+                    </form>
+                </td>
             </tr>
             <tr>
                 <td>Anexo2.jpg</td>
                 <td>500 KB</td>
-                <td><a href="#">Baixar</a></td>
+                <td>
+                    <form action="">
+                        <button type="submit" class="detalhes-button">Baixar</button>
+                    </form>
+                </td>
             </tr>
         </tbody>
     </table>

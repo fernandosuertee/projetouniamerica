@@ -31,7 +31,7 @@
             width: 100px;
             height: 25px;
             background-color: rgb(220, 218, 218); /* Cor interna dos retângulos */
-            margin: 20px;
+            margin: 20px auto; /* Centralizar horizontalmente o botão */
             transition: background-color 0.3s ease;
             cursor: pointer;
             border-radius: 10px;
@@ -68,11 +68,13 @@
     </style>
 </head>
 <body>
-    <a href="dashboard-aluno.html" class="voltar-button">Voltar</a>
+    <form action="dashboard-aluno.html">
+        <button type="submit" class="voltar-button">Voltar</button>
+    </form>
     <h1>Insira o RA do seu colega</h1>
-    <input type="number" id="numero" min="0" placeholder="Digite seu RA">
-    <a href="grupo.html" class="retangulo">
-        <p>Adicionar</p>
-    </a>
+    <form action="grupo.html">
+        <input type="number" id="numero" name="ra" min="0" placeholder="Digite o RA" required>
+        <button type="submit" class="retangulo">Adicionar</button>
+    </form>
 </body>
 </html>
