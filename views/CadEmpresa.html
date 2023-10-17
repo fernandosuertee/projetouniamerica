@@ -209,12 +209,12 @@
 					<div class="form-group col-md">
 						<br>
 						<label for="inputNomeFantasia">Nome Fantasia:</label>
-						<input type="text" class="form-control" id="inputNomeFantasia" placeholder="Digite o Nome Fantasia" equired oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '');">
+						<input type="text" class="form-control" id="inputNomeFantasia" placeholder="Digite o Nome Fantasia" required>
 					</div>
 					<br>
 					<div class="form-group col-md">
 						<label for="inputRazaoSocial">Razão Social:</label>
-						<input type="text" class="form-control" id="inputRazaoSocial" placeholder="Digite a Razão Social" equired oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '');">
+						<input type="text" class="form-control" id="inputRazaoSocial" placeholder="Digite a Razão Social" required>
 					</div>
 					<br>
 					<div class="form-group col-md-6">
@@ -252,7 +252,21 @@
 					<br>
 					<div class="form-group col-md-8">
 						<label for="inputPais">País de Origem:</label>
-						<input type="text" class="form-control" id="inputPais" placeholder="EUA" required>
+						<select class="form-control" name="paises" id="paises" required>
+							<option value="brasil">Brasil</option>
+							<option value="estados_unidos">Estados Unidos</option>
+							<option value="canada">Canadá</option>
+							<option value="reino_unido">Reino Unido</option>
+							<option value="franca">França</option>
+							<option value="alemanha">Alemanha</option>
+							<option value="espanha">Espanha</option>
+							<option value="portugal">Portugal</option>
+							<option value="argentina">Argentina</option>
+							<option value="mexico">México</option>
+							<option value="australia">Austrália</option>
+							<!-- Adicione mais países aqui, se desejar -->
+						 </select>
+						<!--<input type="text" class="form-control" id="inputPais" placeholder="EUA" required>-->
 					</div>
 					<br>
 					<div class="form-group">
@@ -265,7 +279,7 @@
 					</div>
 					<br><br>
 					<div class="d-grid gap-2 col-6 mx-auto">
-						<button type="submit" class="btn btn-primary" > Finalizar Cadastro </button>
+						<button type="submit" class="btn btn-primary" > Continuar o Cadastro </button>
 					</div>
 					<br>
 				</form>
@@ -276,6 +290,7 @@
 <!-- chamada do JS -->
 <script type="text/javascript" src="js/CadDemanda.js"></script>
 <script type="text/javascript" src="views/js/bootrstrap.js"></script>
+
+
 </body>
 </html>
-
