@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Centraliza verticalmente na tela */
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: rgb(14, 214, 14);
+            color: white;
+        }
+
+        .retangulo {
+            width: 80%;
+            max-width: 800px; /* Ajuste a largura conforme necessário */
+            height: 200px; /* Altura do retângulo */
+            background-color: lightgray; /* Cor de fundo */
+            border: 2px solid #ddd; /* Bordas */
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .header-text {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .descricao-text {
+            padding: 20px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .anexos-table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .anexos-th, .anexos-td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .anexos-th {
+            background-color: #333;
+            color: white;
+        }
+        .voltar-button {
+            position: absolute;
+            top: 10px; /* Distância do topo */
+            left: 10px; /* Posicionado à esquerda da tela */
+            background-color: #000000;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .voltar-button:hover {
+            background-color: rgb(17, 242, 17);
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br><br><br><br>
+    <form action="grupo.html">
+        <button type="submit" class="voltar-button">Voltar</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <td>Detalhes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TÍTULO DO PROJETO: Projetos Integradores</td>
+                <td>ACEITADO EM: 20/08/2023</td>
+            </tr>
+            <tr>
+                <td>RAZÃO SOCIAL: Centro Universitário União das Américas Descomplica</td>
+                <td>EMAIL: daniel.pedrino@descomplica.com.br</td>
+            </tr>
+            <tr>
+                <td>CONTATO DO MENTOR : (45) 12345-6789</td>
+                <td>NOME FANTASIA DA EMPRESA: Uniamerica</td>
+            </tr>
+            <tr>
+                <td>DESCRIÇÃO DO PROJETO: Este é um projeto para os alunos conseguirem ver todos os projetos Integradores disponiveis para ele.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="retangulo">
+        <div class="header-text">Descrição da demanda</div>
+        <div class="descricao-text">
+            <br>
+            Esta é apenas uma simulação de descrição para uma descrição de algum projeto integrador. Esta é Apenas uma descrição aléatoria só para poder facilitar na demonstação de uma descrição para um projeto integrador. Esta descrição será escrita pelo responsável do projeto para ajudar e facilitar a compreensão do projeto afim de ter o resultado mais próximo do que o demandante deseja e a satisfação do mesmo.<br>
+        </div>
+    </div>
+
+    <table class="anexos-table">
+        <thead>
+            <tr>
+                <th>Nome do Anexo</th>
+                <th>Tamanho</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Anexo1.pdf</td>
+                <td>250 KB</td>
+                <td>
+                    <form action="">
+                        <button type="submit" class="detalhes-button">Baixar</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Anexo2.jpg</td>
+                <td>500 KB</td>
+                <td>
+                    <form action="">
+                        <button type="submit" class="detalhes-button">Baixar</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="anexos-table">
+        <thead>
+            <tr>
+                <th>Envie seu projeto</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arraste o seu arquivo aqui</td>
+                <td>
+                    <form action="">
+                        <button type="submit" class="detalhes-button">enviar</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="anexos-table">
+        <thead>
+            <tr>
+                <th>Projetos já enviados</th>
+                <th>Tamanho</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>entrega1.rar</td>
+                <td>250 KB</td>
+                <td>
+                    <form action="">
+                        <button type="submit" class="detalhes-button">baixar</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
