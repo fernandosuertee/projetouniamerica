@@ -1,5 +1,24 @@
-
+body {
+  background-image: url('logologinuni.png'); /* Substitua 'sua-imagem-de-fundo.jpg' pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* BASIC */
+
+p {
+  font-size: 30px;
+
+  color: #6c757d;
+}
+
+.btnesqueceu{
+
+  margin-left: 70px;
+color: #24af24;
+
+}
+
 
 html {
   background-color: #56baed;
@@ -41,15 +60,16 @@ h2 {
   padding: 20px;
 }
 
+
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
   background: #ffffff;
   padding: 30px;
-  width: 90%;
-  max-width: 450px;
+  width: 40%;
+  max-width: 400px;
   position: relative;
-  padding: 0px;
+  padding: 0;
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: center;
@@ -58,7 +78,7 @@ h2 {
 #formFooter {
   background-color: #f6f6f6;
   border-top: 1px solid #dce8f1;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
   -webkit-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
@@ -145,7 +165,7 @@ input[type=text]:placeholder {
 
 .button-style {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 40px;
   color: #fff;
   background-color: #24af24; /* Cor do botão, aqui estou usando um azul */
   border: none;
@@ -153,6 +173,7 @@ input[type=text]:placeholder {
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s;
+  text
 }
 
 .button-style:hover {
@@ -165,21 +186,21 @@ input[type=text]:placeholder {
   width: 300px;       /* Define a largura da imagem */
   border-radius: 0px; /* Arredonda os cantos */
   box-shadow: 3px 3px 10px #fff(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
-  border: 2px solid #ffffff; /* Adiciona uma borda sólida */
+  border:  ; /* Adiciona uma borda sólida */
   margin: 20px auto;  /* Centraliza a imagem (quando display é block) e adiciona uma margem vertical */
   display: flexbox;    /* Faz a imagem se comportar como um bloco */
   text-align: center;
     position: absolute;
-    top: 60px;
-    left: 38%;
+    top: -20px;
+    left: 35%;
    
 }
 
 
 
-/* ANIMATIONS 
+/*ANIMATION 
 
-/* Simple CSS3 Fade-in-down Animation *
+/ Simple CSS3 Fade-in-down Animation *
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -215,7 +236,7 @@ input[type=text]:placeholder {
   }
 }
 
-/* Simple CSS3 Fade-in Animation *
+/ Simple CSS3 Fade-in Animation *
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -259,7 +280,7 @@ input[type=text]:placeholder {
   animation-delay: 1s;
 }
 
-/* Simple CSS3 Fade-in Animation *
+/ Simple CSS3 Fade-in Animation *
 .underlineHover:after {
   display: block;
   left: 0;
@@ -281,7 +302,7 @@ input[type=text]:placeholder {
 
 
 
-/* OTHERS *
+/ OTHERS *
 
 *:focus {
     outline: none;
