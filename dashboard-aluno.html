@@ -6,13 +6,24 @@
     <title>Dashboard</title>
     <style>
         body {
-            background-color: white;
+            background-color: #f0f0f0; /* Cinza claro */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+
+        #container {
+            width: 250px;
+            height: 350px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .retangulo {
@@ -43,17 +54,19 @@
 </head>
 <body>
     <img src="logo.png" alt="Imagem de Cabeçalho" style="max-width: 20%; height: auto;">
-    <form action="demandas-aluno.html">
-        <button type="submit" class="retangulo">Demandas</button>
-    </form>
-    <form action="grupo.html">
-        <button type="submit" class="retangulo">Meu Grupo</button>
-    </form>
-    <form action="adicionar.html">
-        <button type="submit" class="retangulo">Adicionar membro </button>
-    </form>
-    <form action="convite.html">
-        <button type="submit" class="retangulo">Convite para grupo </button>
-    </form>
+    <div id="container">
+        <form action="demandas-aluno.html">
+            <button type="submit" class="retangulo">Demandas</button>
+        </form>
+        <form action="grupo.html">
+            <button type="submit" class="retangulo">Meu Grupo</button>
+        </form>
+        <form action="adicionar.html">
+            <button type="submit" class="retangulo">Adicionar membro </button>
+        </form>
+        <form action="convite.html">
+            <button type="submit" class="retangulo">Convite para grupo </button>
+        </form>
+    </div>
 </body>
 </html>

@@ -6,7 +6,9 @@
     <title>Login Aluno</title>
     <style>
         body {
-            background-color: #f0f0f0;
+            background-image: url('fundouniamerica.png');
+            background-size: cover;
+            background-position: center;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -15,30 +17,38 @@
             margin: 0;
         }
 
-        #numero {
-            padding: 10px;
-            font-size: 18px;
+        #header {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        /* Remova as setas laterais do campo de entrada numérica */
-        #numero::-webkit-outer-spin-button,
-        #numero::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            appearance: none;
-            margin: 0;
+        #logo {
+            width: 200px;
         }
-        /* Aumente a largura do campo da senha */
-        #senha {
+
+        #container {
+            background-color: rgba(241, 241, 241, 0.8); /* Fundo branco semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #numero, #senha {
             padding: 10px;
             font-size: 18px;
-            width: 90%;
+            margin-bottom: 10px;
+            width: 80%;
         }
-        
+
         .retangulo {
-            width: 100px;
-            height: 25px;
-            background-color: rgb(220, 218, 218); /* Cor interna dos retângulos */
-            margin: 20px;
+            width: 213px;
+            height: 35px;
+            background-color: rgb(17, 242, 17); /* Cor interna dos retângulos */
+            margin-top: 10px;
+            margin-left: 13px;
             transition: background-color 0.3s ease;
             cursor: pointer;
             border-radius: 10px;
@@ -46,30 +56,47 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             position: relative;
-            border: 2px solid rgb(168, 167, 167); /* Cor da borda */
+            border: 2px solid rgb(17, 242, 17); /* Cor da borda */
             justify-content: center; /* Centraliza verticalmente */
-            margin-left: 70px; /* Move o retângulo para a direita */
         }
 
-        .retangulo p {
-            line-height: 0px; /* Centraliza verticalmente o texto */
+        #esqueciSenha {
+            width: 200px;
+            height: 15px;
+            margin-top: 10px;
+            margin-left: 0px;
+            color: blue;
+            border: 2px solid blue;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
         }
 
         .retangulo:hover {
-            background-color: rgb(17, 242, 17); /* Cor interna dos retângulos quando hover */
+            background-color: rgb(0, 128, 0); /* Cor interna dos retângulos quando hover */
+        }
+
+        h3 {
+            color: rgb(96, 94, 94); /* Cor da escrita "Login Aluno" */
         }
     </style>
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="dashboard-aluno.html" method="POST">
-        <input type="number" id="numero" name="ra" min="0" placeholder="Digite seu RA" required>
-        <br>
-        <input type="password" id="senha" name "senha" placeholder="Digite sua senha" required>
-        <br>
-        <button type="submit" class="retangulo">Login</button>
-    </form>
+    <div id="header">
+        <img src="logo.png" alt="Logo" id="logo"> 
+    </div>
+    <div id="container">
+        <form action="dashboard-aluno.html" method="POST">
+            <h3>Login Aluno</h3>
+            <input type="number" id="numero" name="ra" min="0" placeholder="Digite seu RA" required>
+            <br>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            <br>
+            <button type="submit" class="retangulo">Login</button>
+        </form>
+        <div id="esqueciSenha">Esqueci minha senha</div>
+    </div>
 </body>
 </html>
