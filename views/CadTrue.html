@@ -8,19 +8,48 @@
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <!--login -->
-<body class="bg-login">	
-	<div class="container-fluid">	
+<body style="background-repeat: no-repeat; background: linear-gradient(rgba(25, 26, 26, 0.80), rgba(25, 26, 26, 0.80), rgba(25, 26, 26, 0.80)),url(img/vucahorizontal.jpeg); background-size: 1690px; "	>
+	<section>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-grey">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="../Home.html">
+				<img src="img/logoDescohorizontal.png" style="padding-left: 20%;" width="310" height="45" alt="Logo">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 15%;" width="500" height="50" alt="btn">
+				<ul class="navbar-nav ">
+				  <li class="nav-item">
+					<button type="button" onclick="location.href='../Home.html'" class="nav-link" >Cadastrar demandas</button>
+				  </li>
+				  <li class="nav-item">
+					<button type="button" onclick="location.href='views/projetotesteanderson.html'" class="nav-link" >Status demandas cadastradas</button>
+				  </li>
+				  <li class="nav-item">
+					<button type="button" onclick="location.href='views/login.html'" class="nav-link" >Acesso Uniamerica</button>
+				  </li>
+				  <li class="nav-item">
+					<button type="button" onclick="location.href='login-aluno.html'" class="nav-link" >Acesso Estudante</button>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+	</section>
+
+	<div class="container-fluid " >	
 		<div class="row col-md-12">
 			<div class="col-md-4"></div>
-			<div class="col-md-4 login">
-				<h1 class="text-center text-primary" href="../home.html"><img src="img/logoUni.png"> </h1>
-					<div class="d-grid gap-2">
+			<div class="col-md-4 login" style="background-color: #ffffffdc;">
+				<h1 class="text-center text-primary" href="../Home.html"><img src="img/logoUni.png"> </h1>
+					<div class="d-grid gap-2" >
 						<br>
-				  		<h4>Cadastro realizado com Sucesso!!!</h4>
-						<a href="../projetotesteanderson.html" class="btn bg-login btn-lg">Ver Status Demandas</a>
-						<a href="../home.html" class="btn bg-login btn-lg">Inicio</a>
+				  		<h4 style="text-align: center;  font-family: sans-serif; " >Cadastro realizado com Sucesso!!!</h4>
+						<a href="#" class="btn bg-login fonte-input btn-lg">Ver Status Demandas</a>
+						<a href="../Home.html" class="btn bg-login fonte-input btn-lg">Inicio</a>
 					</div>
-			<div class="col-md-4"></div>
+			<div class="col-md-4" ></div>
 		</div>
 	</div>
 
